@@ -1,0 +1,58 @@
+/* Quantity.module.css */
+
+.quantity {
+  display: flex;
+  flex-direction: column; /* Sắp xếp các phần tử theo chiều dọc */
+  justify-content: flex-start;
+  align-items: left;
+  margin: 0 70% 2em 0;
+}
+
+.quantityInput {
+  display: flex;
+  justify-content: space-between; /* Thay đổi thành space-between */
+  align-items: left;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 3px;
+}
+
+.modifier,
+.screen {
+  flex-grow: 0;
+  user-select: none;
+  outline: none;
+}
+
+.modifier {
+  padding: 0.7rem;
+  width: 3rem;
+  font-size: 1rem;
+  background-color: #f3f3f3;
+  color: #888;
+  border: none;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Thêm hiệu ứng chuyển đổi */
+}
+
+.modifier:hover {
+  background-color: #e0e0e0; /* Màu nền khi hover */
+  color: #555; /* Màu chữ khi hover */
+}
+
+.left {
+  border-radius: 3px 0 0 3px;
+}
+
+.right {
+  border-radius: 0 3px 3px 0;
+}
+
+.screen {
+  width: 4rem;
+  padding: 0.7rem;
+  font-size: 1rem;
+  border: none;
+  text-align: center;
+}

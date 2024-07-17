@@ -1,0 +1,304 @@
+.productGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 200fr));
+  column-gap: 2.5%;
+  row-gap: 2rem;
+  margin-bottom: 4em;
+}
+
+@media screen and (max-width: 1200px) {
+  .productGrid {
+    column-gap: 4%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .productGrid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    column-gap: 7.5%;
+  }
+}
+
+
+.productList {
+  list-style: none;
+  padding: 0;
+}
+
+.pagePadding {
+    padding: 20px;
+  }
+  
+  .productList {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .productItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+.productImage {
+  max-width: 100px;
+}
+
+  .button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+  }
+  
+  
+/* ===== Page Layout & Spacing ===== */
+
+.pagePadding {
+  padding: 1em 10%;
+  margin-bottom: 10%;
+}
+
+.pageLoginRegPadding {
+  padding: 1em 20% 0 17%;
+  margin: auto;
+}
+
+.email {
+  color: rgb(105, 0, 0);
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1400px) {
+  .pagePadding {
+    padding: 0 5% 4rem 5%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .pagePadding {
+    padding: 0 2.5% 4rem 2.5%;
+  }
+}
+
+.mt1rem {
+  margin-top: 1rem;
+}
+
+.mt2rem {
+  margin-top: 2rem;
+}
+
+.mb1rem {
+  margin-bottom: 1rem;
+}
+
+.mb2rem {
+  margin-bottom: 2rem;
+}
+
+.mb3rem {
+  margin-bottom: 3rem;
+}
+
+.mb4rem {
+  margin-bottom: 4rem;
+}
+
+.mw80rem {
+  max-width: 80rem;
+}
+
+
+/* ===== Links and Buttons ===== */
+
+.link,
+.link:link {
+  color: rgb(0, 130, 160);
+  text-decoration: none;
+}
+
+.link:visited {
+  color: rgb(0, 115, 135);
+}
+
+.link:focus,
+.link:hover {
+  color: rgb(200, 80, 30);
+  text-decoration: underline;
+}
+
+.link:active {
+  color: rgb(180, 70, 25);
+  text-decoration: none;
+}
+
+.button,
+.button:link,
+.button:visited {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.2em;
+  padding: 0.5em 2em;
+  background-color: rgb(45, 192, 255);
+  border: 2px solid rgba(17, 71, 94, 0.582);
+  border-radius: 25px;
+  box-shadow: 0 2px 5px rgb(217, 217, 217);
+  color: rgb(15, 17, 17);
+  font-size: 1.1rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+.button:focus,
+.button:hover {
+  cursor: pointer;
+  background-color: rgb(247, 202, 0);
+  border: 2px solid rgb(242, 194, 0);
+}
+
+.button:active {
+  background-color: rgb(240, 184, 0);
+  border: 2px solid rgb(0, 180, 240);
+  box-shadow: 0 2px 5px rgb(200, 240, 250);
+}
+
+
+/* ===== Forms ===== */
+
+.stackedForm {
+  display: flex;
+  flex-direction: column;
+  max-width: 25rem;
+}
+
+.label {
+  margin-bottom: 0.4rem;
+  margin-left: 0.15rem;
+  font-weight: 700;
+}
+
+.input {
+  min-height: 2rem;
+  margin-bottom: 1.2rem;
+  border: 1px solid rgb(140, 140, 140);
+  border-radius: 5px;
+}
+
+
+/* ===== Other HTML Elements ===== */
+
+.h1 {
+  margin-bottom: 0.8em;
+}
+
+
+/* ===== Font Size & Weight ===== */
+
+.bold {
+  font-weight: 700;
+}
+
+.regularWeight {
+  font-weight: 400;
+}
+
+.smallText {
+  font-size: 1.1rem;
+}
+
+.largeText {
+  font-size: 1.2em;
+}
+
+.XLText {
+  font-size: 1.4rem;
+}
+
+
+/* ===== Miscellaneous ===== */
+
+.red {
+  color: rgb(175, 40, 5);
+}
+
+.separator {
+  margin: 1em 3em;
+}
+
+.emptyFeedMessage {
+  margin-top: 2.5em;
+  font-style: italic;
+}
+
+p {
+  font-size: 1.1rem;
+} 
+
+
+/* SellerProducts.module.css */
+
+.productList {
+  list-style: none; /* Remove default list styling */
+  padding: 0;
+  margin: 1rem 0;  /* Add some spacing around the table */
+}
+
+.productItem {
+  background-color: #fff; /* Light background for better contrast */
+  border: 1px solid #ddd; /* Subtle border */
+  border-radius: 8px; /* Rounded corners */
+  padding: 1.5rem; /* Generous padding */
+  margin-bottom: 1rem; /* Space between items */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.productItem table {
+  width: 100%; /* Make table fill container */
+  border-collapse: collapse; /* Remove extra spacing between cells */
+}
+
+.productItem th, .productItem td {
+  padding: 0.8rem; /* Consistent padding in cells */
+  text-align: left; /* Align text to the left */
+  border-bottom: 1px solid #eee; /* Light horizontal dividers */
+}
+
+.productItem th {
+  background-color: #f5f5f5; /* Light background for header */
+  font-weight: bold;
+}
+
+.productImage {
+  max-width: 100px;
+  height: auto;
+  margin: 0 auto; /* Center the image */
+  display: block; /* Prevent extra space below image */
+}
+
+.productItem th, .productItem td {
+  padding: 0.8rem;  
+  text-align: center; /* Center align the content within each cell */
+  vertical-align: middle; /* Vertically center the content within each cell */
+  border-bottom: 1px solid #eee; 
+}
+.productItem {
+  display: grid; /* Use CSS Grid for vertical layout */
+  grid-template-columns: 1fr; /* Single column for all content */
+  grid-gap: 1rem; /* Spacing between rows */
+  text-align: center; /* Optional: Center align text within each div */
+}
+
+.productImage {
+  max-width: 100%; /* Ensure the image scales responsively */
+  height: auto;
+  margin: 0 auto;
+}

@@ -1,0 +1,62 @@
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background: linear-gradient(90deg, #12B4C4, #324BAD, #2C42FF);
+}
+
+.search {
+  background: linear-gradient(270deg, #12B4C4, #000000, #005082);
+  max-width: 200px;  /* Adjust as needed */
+}
+
+.logoContainer {
+  align-items: center;
+  margin: auto 2%;
+}
+
+.logo {
+  color: rgb(255, 255, 255);
+  font-size: 1em;
+  text-decoration: none;
+  height: 0.5rem;
+  width: 0.5rem;
+}
+
+.shopee {
+  display: inline-block;
+  height: 0.1em;
+  width: 0.1em;
+  fill: #F95C30;
+  display: block;
+}
+
+.image {
+  max-width: 150px;
+}
+
+.text {
+  display: inline-block;
+  color: #F95C30;
+  font-weight: 600;
+  font-size: 2rem;
+  position: absolute; /* Thêm */
+  top: 1.2rem; /* Thêm */
+  left: 9.5rem;
+  transform: translateX(-50%); /* Thêm */
+}
+
+@media screen and (max-width: 600px) {
+  .text {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .logoContainer {
+    /* Centre logo */
+    align-items: center;
+    flex-grow: 0;
+    margin: 2em auto 0;
+  }
+}
